@@ -19,6 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+    <a className="btn_totop"><img src="/assets/images/btn_top.png" alt=""/></a>
+    <a href="" className="box_napsil_fixleft"><img src="/assets/images/bg_napsil.png" alt=""/></a>
       <body>
       <Header/>
       {children}
