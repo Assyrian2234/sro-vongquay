@@ -57,6 +57,7 @@ export default function Provider({ children }: any) {
   };
 
   const loadingLoginAPI = (load: boolean) => {
+    console.log("loadinggggggggggggg")
     if (load) {
       dispatch({ type: "loadingLogin", payload: {} });
     } else {

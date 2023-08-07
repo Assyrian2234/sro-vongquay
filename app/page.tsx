@@ -7,7 +7,6 @@ export default function Home() {
     <main>
       <RotateLucky/>
       <RankList/>
-
-</main>
+  </main>
   )
 }
