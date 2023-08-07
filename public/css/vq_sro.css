@@ -1,0 +1,354 @@
+ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,i,em{margin:0;padding:0;border:0;outline:0;list-style:none;text-decoration:none;font-style:normal;font-weight:normal;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+table {border-collapse: collapse;}
+.clear {clear: both;}
+@font-face{font-family:'SVN-Book Antiqua';src:url('/assets/fonts/SVN-BookAntiqua.eot');src:url('/assets/fonts/SVN-BookAntiqua.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/SVN-BookAntiqua.woff2') format('woff2'),url('/assets/fonts/SVN-BookAntiqua.woff') format('woff'),url('/assets/fonts/SVN-BookAntiqua.ttf') format('truetype'),url('/assets/fonts/SVN-BookAntiqua.svg#SVN-BookAntiqua') format('svg');font-weight:normal;font-style:normal;font-display:swap;}
+@font-face{font-family:'UVN Thang Vu';src:url('/assets/fonts/UVNThangVu.eot');src:url('/assets/fonts/UVNThangVu.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/UVNThangVu.woff2') format('woff2'),url('/assets/fonts/UVNThangVu.woff') format('woff'),url('/assets/fonts/UVNThangVu.ttf') format('truetype'),url('/assets/fonts/UVNThangVu.svg#UVNThangVu') format('svg');font-weight:normal;font-style:italic;font-display:swap;}
+@font-face{font-family:'SVN-Book AntiquaB';src:url('/assets/fonts/SVN-BookAntiquabold.eot');src:url('/assets/fonts/SVN-BookAntiquabold.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/SVN-BookAntiquabold.woff2') format('woff2'),url('/assets/fonts/SVN-BookAntiquabold.woff') format('woff'),url('/assets/fonts/SVN-BookAntiquabold.ttf') format('truetype'),url('/assets/fonts/SVN-BookAntiquabold.svg#SVN-BookAntiquabold') format('svg');font-weight:bold;font-style:normal;font-display:swap;}
+
+body{overflow-x: hidden;background: url(/assets/images/bg.jpg)#000 no-repeat top center;}
+.wrapper{max-width:1200px;margin:0 auto;display:block;position: relative;padding: 0px 15px;box-sizing: border-box;width: 100%;}
+.box_napsil_fixleft{position:fixed;top:100px;left:20px;z-index: 6;}
+.box_napsil_fixleft:after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:url(/assets/images/bg_napsil.png) no-repeat top center;-moz-animation:pulseInOut 1.1s 1.1s ease-in infinite;-webkit-animation:pulseInOut 1.1s 1.1s ease-in infinite;-o-animation:pulseInOut 1.1s 1.1s ease-in infinite;-ms-animation:pulseInOut 1.1s 1.1s ease-in infinite;animation:pulseInOut 1.1s 1.1s ease-in infinite;z-index:-1;}
+@-webkit-keyframes pulseInOut {
+    0% {
+        opacity:0
+    }
+    10% {
+        opacity:1
+    }
+    90% {
+        -webkit-transform:scale3d(1.08,1.08,1.08);
+        -moz-transform:scale3d(1.08,1.08,1.08);
+        -ms-transform:scale3d(1.08,1.08,1.08);
+        -o-transform:scale3d(1.08,1.08,1.08);
+        transform:scale3d(1.08,1.08,1.08);
+    }
+    100% {
+        opacity:0
+    }
+}
+@-moz-keyframes pulseInOut {
+    0% {
+        opacity:0
+    }
+    10% {
+        opacity:1
+    }
+    90% {
+        -webkit-transform:scale3d(1.08,1.08,1.08);
+        -moz-transform:scale3d(1.08,1.08,1.08);
+        -ms-transform:scale3d(1.08,1.08,1.08);
+        -o-transform:scale3d(1.08,1.08,1.08);
+        transform:scale3d(1.08,1.08,1.08);
+    }
+    100% {
+        opacity:0
+    }
+}
+@-ms-keyframes pulseInOut {
+    0% {
+        opacity:0
+    }
+    10% {
+        opacity:1
+    }
+    90% {
+        -webkit-transform:scale3d(1.08,1.08,1.08);
+        -moz-transform:scale3d(1.08,1.08,1.08);
+        -ms-transform:scale3d(1.08,1.08,1.08);
+        -o-transform:scale3d(1.08,1.08,1.08);
+        transform:scale3d(1.08,1.08,1.08);
+    }
+    100% {
+        opacity:0
+    }
+}
+@-o-keyframes pulseInOut {
+    0% {
+        opacity:0
+    }
+    10% {
+        opacity:1
+    }
+    90% {
+        -webkit-transform:scale3d(1.08,1.08,1.08);
+        -moz-transform:scale3d(1.08,1.08,1.08);
+        -ms-transform:scale3d(1.08,1.08,1.08);
+        -o-transform:scale3d(1.08,1.08,1.08);
+        transform:scale3d(1.08,1.08,1.08);
+    }
+    100% {
+        opacity:0
+    }
+}
+@keyframes pulseInOut {
+    0% {
+        opacity:0
+    }
+    10% {
+        opacity:1
+    }
+    90% {
+        -webkit-transform:scale3d(1.08,1.08,1.08);
+        -moz-transform:scale3d(1.08,1.08,1.08);
+        -ms-transform:scale3d(1.08,1.08,1.08);
+        -o-transform:scale3d(1.08,1.08,1.08);
+        transform:scale3d(1.08,1.08,1.08);
+    }
+    100% {
+        opacity:0
+    }
+}
+header{background: linear-gradient(0deg, rgba(0,0,0,0.8015581232492998) 0%, rgba(16,8,0,0.8015581232492998) 100%);position: relative;}
+header:after{content:"";position: absolute;bottom: 0;left: 0;width: 100%;height: 2px;background: linear-gradient(90deg, rgba(68,46,16,1) 0%, rgba(251,243,155,1) 15%, rgba(255,247,158,1) 50%, rgba(240,231,147,1) 85%, rgba(68,46,16,1) 100%);}
+header .wrapper{display: flex;align-items: center;}
+.logo_to{position: absolute;top:5px;left: 20px;z-index: 2;}
+.ls_menutop{display: flex;align-items: center;margin-left:200px;}
+.ls_menutop li{margin-right: 50px;}
+.ls_menutop li:last-child{margin-right: 0;}
+.ls_menutop li a{color:#ffe68e;font-size:24px;background-image:-webkit-linear-gradient(90deg,#865e21 0%,#fef697 50%);background-clip:text;-webkit-background-clip:text;text-fill-color:transparent;-webkit-text-fill-color:transparent;}
+.box_dangnhapall{margin-left: auto;display: flex;align-items: center;margin-top: 15px;margin-bottom: 15px;position: relative;z-index: 3;}
+.btn_chuadnha{background: linear-gradient(0deg, rgba(149,121,67,1) 0%, rgba(255,239,148,1) 100%);display: flex;align-items: center;justify-content: center;font-size: 24px;color: #4f2100;margin-right: 5px;font-family:'SVN-Book Antiqua';padding: 0px 25px 6px 25px;box-sizing: border-box;line-height: 1.25;}
+.btn_chuadnha:hover{filter: contrast(115%);-moz-filter: contrast(115%);-webkit-filter: contrast(115%);}
+.link_alsharee{position: relative;}
+.bx_tooti_share{position: absolute;top:40px;width: 290px;background-color: rgba(0, 0, 0, 0.7);border-radius: 5px;right: 0;padding: 6px 10px;color:#fff;text-align: center;font-size: 16px;font-family:'SVN-Book Antiqua';opacity: 0;
+    transition: opacity .6s;}
+.bx_tooti_share em{color:#538cda;}
+.bx_tooti_share:after{content:"";position:absolute;top:-5px;right:10px;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom: 5px solid rgb(0 0 0 / 70%);}
+.link_alsharee:hover .bx_tooti_share{visibility: visible;opacity: 1;}
+.bx_dangnhap_okus{display: flex;align-items: center;margin-right: 5px;}
+.bx_dangnhap_okus p{color: #fff;font-size: 24px;}
+.bx_dangnhap_okus p b{color:#ffef94;}
+.bx_dangnhap_okus a{margin:0px 15px;}
+.link_dn_mobila{display: none;}
+.btn_mboli{width:33px;height:2px;background-color:#fff;position: absolute;cursor: pointer;display: none;right: 15px;top: 25px;}
+.btn_mboli:before{content:"";position:absolute;top:10px;left:0;width:33px;height:2px;background-color:#fff;}
+.btn_mboli:after{content:"";position:absolute;top:20px;left:0;width:33px;height:2px;background-color:#fff;}
+.btn_mboli.ac_show{-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);top:35px;}
+.btn_mboli.ac_show:before{-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);top:0;}
+.btn_mboli.ac_show:after{content:none;}
+.bx_texchay{border-radius: 5px;background-color:rgba(0, 0, 0, 0.7);position: relative;padding: 5px 0px;box-sizing: border-box;white-space: nowrap;box-shadow: 0px 1px #888883;overflow: hidden;white-space: nowrap;}
+/*.bx_texchay:after{content:"";position: absolute;top:50%;left:15px;transform: translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);background: url(/assets/images/icon_chuon.png) no-repeat top center;width: 39px;height: 42px;}*/
+.bx_texchay p{color:#fff;font-family: 'SVN-Book Antiqua';font-size: 18px;line-height: 40px;display: inline-block;margin-right: 30px;}
+.bx_texchay p img{vertical-align: middle;margin-right: 10px;float: left;}
+.bx_texchay em{font-family: 'SVN-Book AntiquaB';}
+.bx_texchay em.mau_tx1{color:#5dcdc6;}
+.bx_texchay em.mau_tx2{color:#a590ff;}
+.ls_btn_vquayto{display: flex;align-items: center;justify-content: space-between;margin: 10px auto;}
+.btn_thele,.btn_khodo{background: url(/assets/images/bg_btn.png) no-repeat top center;width: 126px;height: 43px;display: flex;align-items: center;justify-content: center;font-family:'SVN-Book AntiquaB';font-size: 18px;color:#a7491b;}
+.btn_thele:hover,.btn_khodo:hover{filter: contrast(130%);-moz-filter: contrast(130%);-webkit-filter: contrast(130%);}
+.bg_alvongquay{position: relative;left: 50%;margin-left: -585px;width: 1170px;margin-right: 0;}
+.btn_quayallvq{position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);text-align: center;z-index: 5;}
+.btn_quayallvq p{display: block;font-family:'SVN-Book Antiqua';color: #fff;font-size: 16px;}
+.btn_quayallvq p b{font-size: 20px;color:#fbe06f;font-family:'SVN-Book AntiquaB';}
+.btn_quayallvq a{display:flex;align-items:center;justify-content:center;text-transform:uppercase;background:url(/assets/images/btn_quay.png) no-repeat top center;width:208px;height:70px;margin-top:10px;font-size:31px;-webkit-transition:.4s ease all;-o-transition:.4s ease all;-moz-transition:.4s ease all;transition:.4s ease all;}
+.btn_quayallvq a em{font-size:31px;color:#865e21;background-image:-webkit-linear-gradient(90deg,#865e21 0%,#fef697 50%);background-clip:text;-webkit-background-clip:text;text-fill-color:transparent;-webkit-text-fill-color:transparent;font-family:'SVN-Book AntiquaB';}
+.btn_quayallvq a:hover{transform:scale(1.08);-moz-transform:scale(1.08);-webkit-transform:scale(1.08);-webkit-transition:.4s ease all;-o-transition:.4s ease all;-moz-transition:.4s ease all;transition:.4s ease all;filter: contrast(115%);-moz-filter: contrast(115%);-webkit-filter: contrast(115%);}
+.nd_vpvongquay{position:relative;width:1170px;margin:0 auto;height:585px;background-color:rgba(0,0,0,0.75);border:10px solid transparent;border-image:url(/assets/images/img_borde.png);border-image-repeat:repeat;border-image-slice:10;}
+.all_bgvatpham,.all_bgvatpham2,.all_bgvatpham3{position: absolute;top:20px;left:115px;background: url(/assets/images/bg_allvp.png) no-repeat top center;width: 136px;height: 85px;display: flex;align-items: center;justify-content: center;text-align: center;color:#5b2002;font-size: 15px;font-family:'SVN-Book AntiquaB';line-height: 1.2;}
+.all_bgvatpham img{position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);max-width: 100%;}
+.all_bgvatpham2{left: 275px;}
+.all_bgvatpham3{left: 435px;}
+.all_bgvatpham4{left: 595px;}
+.all_bgvatpham5{left: 755px;}
+.all_bgvatpham6{left: 915px;}
+.all_bgvatpham7{top:130px;left: 915px;}
+.all_bgvatpham8{top:240px;left: 915px;}
+.all_bgvatpham9{top:350px;left: 915px;}
+.all_bgvatpham10{top:460px;left: 915px;}
+.all_bgvatpham11{top:460px;left: 755px;}
+.all_bgvatpham12{top:460px;left: 595px;}
+.all_bgvatpham13{top:460px;left: 435px;}
+.all_bgvatpham14{top:460px;left: 275px;}
+.all_bgvatpham15{top:460px;left: 115px;}
+.all_bgvatpham16{top:350px;left: 115px;}
+.all_bgvatpham17{top:240px;left: 115px;}
+.all_bgvatpham18{top:130px;left: 115px;}
+.all_bgvatpham.all_vptrung:after{content:"";background: url(/assets/images/ac_trung.png) no-repeat top center;width: 170px;height: 115px;position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);pointer-events: none;}
+.img_trangtri_btom{position: absolute;bottom: 0;right:-8px;z-index: 5;pointer-events: none;}
+.img_trangtri_left{position: absolute;left: -8px;top: -8px;z-index: 5;pointer-events: none;}
+.bx_tooti_hv{visibility:hidden;position:absolute;width: 160px;background-color:#fff;color:#fff;text-align:center;padding:5px 0;border-radius:6px;z-index:1;opacity:0;transition:opacity .6s;right: -165px;text-align: center;color:#5b2002;font-size: 15px;font-family:'SVN-Book AntiquaB';line-height: 1.2;box-shadow: 0px 0px #ccc;padding: 5px;}
+.bx_tooti_hv:after{content:"";position:absolute;top:50%;right:100%;margin-top:-5px;border-width:5px;border-style:solid;border-color:transparent #fff transparent transparent;}
+.all_bgvatpham:hover .bx_tooti_hv{visibility: visible;opacity: 1;}
+.img_tdbxhvongquay,.img_vongquay{display: block;margin: 0 auto;max-width: 100%;}
+.img_vongquay{margin-top: -65px;margin-bottom: -95px;}
+.all_vongquay{margin-bottom: 260px;}
+.box_xhtop1{background: url(/assets/images/bg_xhtop1.png) no-repeat top center;width: 360px;height: 345px;margin: 40px auto;display: block;padding: 100px 50px 0px 50px;box-sizing: border-box;}
+.nd_allxhtop{display: flex;align-items: center;flex-direction: column;border-radius: 5px;justify-content: center;overflow: hidden;max-width: 200px;margin: 0 auto;}
+.nd_allxhtop b,.nd_allxhtop span,.nd_allxhtop em{font-family: 'SVN-Book AntiquaB';text-align: center;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;box-sizing: border-box;width: 100%;font-size: 20px;padding:10px 5px;}
+.nd_allxhtop b{color:#ffe076;font-size: 30px;background-color: rgba(73, 64, 50, 0.5);}
+.nd_allxhtop span{color:#4d1a01;background-color: rgba(189, 173, 145, 0.5);}
+.nd_allxhtop em{color:#3d91a0;background-color: rgba(222, 205, 176, 0.5);}
+.ls_xhtop2345{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0 -10px;flex-wrap: wrap;}
+.ls_xhtop2345 li{-webkit-box-flex:0;-ms-flex:0 0 calc(25% - 20px);flex:0 0 calc(25% - 20px);width:calc(25% - 20px);margin:0 10px;background:url(/assets/images/bg_xhtopall.png) no-repeat top center;width:282px;height:269px;padding:80px 40px 0px 40px;box-sizing:border-box;position: relative;}
+.ls_xhtop2345 li .nd_allxhtop b{font-size: 24px;padding:8px 5px;}
+.ls_xhtop2345 li .nd_allxhtop span,.ls_xhtop2345 li .nd_allxhtop em{font-size: 16px;padding:8px 35px;}
+.img_alltdtop2345{position: absolute;top:10px;left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);}
+.ndbang_xhtopall{margin-top: 80px;position: relative;padding: 0px 15px;}
+.bg_khungbxh_top{position: absolute;top:-20px;left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);pointer-events: none;z-index: 3;max-width: 100%;}
+.bg_khungbxh_bottom{position: absolute;bottom:-10px;left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);pointer-events: none;z-index: 3;max-width: 100%;}
+.line_leftall{position: absolute;top:0;left:15px;width: 5px;height: 100%;background: linear-gradient(0deg, rgb(185 126 81) 0%, rgba(255,235,184,1) 75%, rgba(255,235,184,1) 80%, rgb(183 109 9) 100%);z-index: 2;}
+.line_rightall{position: absolute;top:0;right:15px;width: 5px;height: 100%;background: linear-gradient(0deg, rgb(185 126 81) 0%, rgba(255,235,184,1) 75%, rgba(255,235,184,1) 80%, rgb(183 109 9) 100%);z-index: 2;}
+.ndbang_xhtopall:after{content:"";position: absolute;top:0;left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);box-shadow: inset 0px 0px 15px 5px #543620;width:calc(100% - 30px);height: 100%;pointer-events: none;z-index: 1;}
+.ndbang_xhtopall table{width: 100%;text-align: center;margin: 0 auto;background-color:#8d7d62;font-family: 'SVN-Book Antiqua';margin-bottom: 150px;}
+.ndbang_xhtopall table tr th,.ndbang_xhtopall table tr td{border-right:solid 1px #4d1a01;}
+.ndbang_xhtopall table tr th:last-child,.ndbang_xhtopall table tr td:last-child{border-right: none;}
+.ndbang_xhtopall table tr th{font-size: 30px;color:#612279;font-family: 'SVN-Book AntiquaB';padding: 20px 10px;background-color:#c3af8c;}
+.ndbang_xhtopall table tr td{padding: 10px 5px;color:#4d1a01;font-family: 'SVN-Book AntiquaB';font-size: 26px;}
+.ndbang_xhtopall table tr td b{color:#ffe076;}
+.ndbang_xhtopall table tr td em{font-family: 'SVN-Book AntiquaB';color:#0c515d;}
+.ndbang_xhtopall table tr:nth-child(even) td{background-color:#9d8d73;}
+footer{background-color:#fff;padding:20px 0px;}
+footer .wrapper{display:flex;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-wrap:wrap;justify-content:space-between;}
+.bx_left_footer p{color:#000;font-size:13px;font-family:'Arial';font-weight:400;display: block;margin: 10px 0px;}
+.logovtc{display:block;margin-bottom: 15px;}
+.tett_all_ft{margin-bottom: 0px;}
+.tett_all_ft h4,.tett_all_ft h5,.tett_all_ft p,.table_footer h5{color:#000;font-size:13px;font-family:'Arial';font-weight:400;margin: 0;}
+.tett_all_ft h5,.table_footer h5{font-weight:700;margin:5px 0px;text-transform:uppercase;}
+.table_footer tr td{padding: 0px;}
+.table_footer tr td a {color: #000;font-size: 12px;font-family: 'Arial';font-weight: 400;line-height: 16px;-webkit-box-sizing: border-box;box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;display: block;}
+.icon-footer {padding-left: 30px !important;background-position: left center;background-repeat: no-repeat;height: 16px;}
+.icon-fb-footer {background-image: url(/assets/images/icon-fb.png);}
+.icon-hotro-footer {background-image: url(/assets/images/icon-hotro.png);}
+.bx_center_footer .tett_all_ft{margin-bottom: 35px;}
+.bx_right_footer .tett_all_ft{margin-bottom: 40px;}
+.bx_right_footer .tett_all_ft.margin_0{margin-bottom: 0;}
+.btn_totop{position: fixed;bottom:45px;right: 15px;display: none;z-index: 9;}
+.fix_bt{display:none;position:fixed;bottom:0;left:0;right:0;z-index:10;background:rgba(0,0,0,0.7);text-transform:uppercase;line-height:1.1;color:#fff;overflow:hidden;text-decoration:none;width:100%;padding:10px 0px;z-index: 10;}
+.fix_bt li a{font-family:'SVN-Book AntiquaB';text-transform:uppercase;color:#865e21;background-image:-webkit-linear-gradient(90deg,#865e21 0%,#fef697 50%);background-clip:text;-webkit-background-clip:text;text-fill-color:transparent;-webkit-text-fill-color:transparent;font-size:18px;}
+
+
+
+
+
+
+
+
+
+.bg_allpop{background-color: rgba(0, 0, 0, 0.8);position: fixed;top:0;left: 0;width: 100%;height: 100%;z-index: 9;padding: 0px 15px;overflow: auto;}
+.bgall_khungpop{position:relative;width:616px;margin:0 auto;background-color:#ffefd4;border:5px solid transparent;border-image:url(/assets/images/img_borde.png);border-image-repeat:repeat;border-image-slice:5;margin-top:30px;max-width: 100%;padding: 40px;box-sizing: border-box;}
+.bg_khungpo_top{position: absolute;top:-10px;left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);width: calc(100% + 20px);pointer-events: none;}
+.bg_khungpo_btom{position: absolute;bottom:-10px;left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);width: calc(100% + 20px);pointer-events: none;}
+.tx_tdall_pop{background: url(/assets/images/bg_tdpop.png) no-repeat top center;width: 301px;height: 39px;display: flex;align-items: center;color:#ffe1c3;font-family:'SVN-Book AntiquaB';justify-content: center;position: absolute;top:-22px;left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);z-index: 2;}
+.ls_formal_dktt{display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.ls_formal_dktt li{display:flex;align-items: center;margin-bottom: 10px;flex: 1;}
+.ls_formal_dktt li span{display: block;min-width: 130px;text-align: left;font-size: 16px;color:#5b2002;font-family:'SVN-Book Antiqua';}
+.ls_formal_dktt li input,.ls_formal_dktt li select{width: 255px;display: block;height: 30px;box-sizing: border-box;padding: 0px 10px;border:none;outline: none;font-size: 16px;font-family:'SVN-Book Antiqua';}
+.ls_formal_dktt li input{background-color:#e6d3b3;color:#000;box-shadow: inset 0px 0px 5px 1px #a7977b;}
+.ls_formal_dktt li select{background:rgb(238,237,237);background:linear-gradient(0deg,rgba(238,237,237,1) 0%,rgba(207,202,192,1) 100%);color:#6e5f40;}
+.btn_dhuong_pop{background: url(/assets/images/btn_quay.png) no-repeat top center;width: 140px;height: 43px;text-align: center;display: block;text-transform: uppercase;background-size: contain;font-size: 16px;color:#e6c266;line-height: 40px;font-family:'SVN-Book AntiquaB';margin-right: auto;margin: 0 auto;margin-top: 20px;}
+.btn_dhuong_pop:hover,.btn_nhqua_allpop:hover{filter: contrast(120%);-moz-filter: contrast(120%);-webkit-filter: contrast(120%);}
+.text_alltbao_pop{display: block;text-align: center;line-height: 1.35;color:#5b2002;font-size: 16px;font-family:'SVN-Book Antiqua';padding: 20px 0px;box-sizing: border-box;}
+.text_alltbao_pop b{color:#7a0ad1;font-size: 20px;font-family:'SVN-Book AntiquaB';line-height: normal;}
+.text_alltbao_pop img{display: block;margin: 0 auto;margin-bottom: 10px;}
+.box_scroll{height: 350px;overflow-y: auto;overflow-x: hidden;}
+.bgall_khungpop.bgall_khungpop_thele{width: 830px;max-width: 100%;}
+.box_scroll p{display: block;margin-bottom: 20px;color:#5b2002;font-size: 16px;font-family:'SVN-Book Antiqua';}
+.btn_closepop{position: absolute;top: -15px;right: -15px;z-index: 3;}
+::-webkit-scrollbar-track{background-color:transparent;}
+::-webkit-scrollbar{width:6px;background-color:transparent;}
+::-webkit-scrollbar-thumb{background-color:#e3ceab;border-radius:2px}
+.all_ltvp_trungpop{display: flex;flex-wrap: wrap;justify-content: space-around;margin-bottom: 20px;}
+.all_ltvp_trungpop li{background-color:#e3ceab;border:solid 1px #af8e73;box-sizing: border-box;display: flex;align-items: center;justify-content: space-between;flex-direction: column;min-width: 115px;}
+.all_ltvp_trungpop li img{margin: 10px auto;display: block;}
+.all_ltvp_trungpop li p{background-color:#d5bd94;text-align: center;color:#5b2002;font-size: 12px;margin-bottom: 0px;padding: 10px;width: 100%;min-height: 70px;}
+.bang_allkhodo_pop{width: 100%;text-align: center;font-size: 16px;font-family:'SVN-Book Antiqua';border:solid 1px #846548;background-color:#e3ceab;}
+.bang_allkhodo_pop tr th,.bang_allkhodo_pop tr td{padding: 5px 0px;box-sizing: border-box;}
+.bang_allkhodo_pop tr th{background-color:#846548;color:#e3ceab;}
+.bang_allkhodo_pop tr td{color:#5b2002;border-right: solid 1px #846548;}
+.bang_allkhodo_pop tr td:last-child{border-right: none;}
+.bang_allkhodo_pop tr:nth-child(odd) td{background-color:#d5bd94;}
+.btn_nhqua_allpop{background: url(/assets/images/btn_pop.png) no-repeat top center;width: 87px;height: 29px;display:flex;align-items: center;justify-content: center;color:#fff;margin: 0 auto;}
+.ls_phantrang_all{display:flex;align-items:center;justify-content:center;margin-top:15px;margin-bottom:0px;}
+.ls_phantrang_all li a{width:20px;height:20px;text-align:center;display:flex;align-items:center;justify-content:center;color:#5b2002;font-family:'SVN-Book Antiqua';}
+.ls_phantrang_all li a.btn_nexptang,.ls_phantrang_all li a.btn_bacptang{border-radius:50%;border:solid 1px #5b2002;font-size:25px;margin:0px 15px;padding-bottom: 8px;}
+.ls_phantrang_all li.acc_ptangall a{font-size:26px;font-family:'SVN-Book AntiquaB';}
+.box_scrol_tabkhdo_pop{overflow-x: auto;}
+
+
+
+
+@media (max-width:1024px){
+    .box_napsil_fixleft{display: none;}
+    .bg_alvongquay{transform: scale(0.85);-moz-transform: scale(0.85);-webkit-transform: scale(0.85);}
+    .ls_xhtop2345 li{-webkit-box-flex:0;-ms-flex:0 0 calc(50% - 20px);flex:0 0 calc(50% - 20px);width:calc(50% - 20px);margin-bottom: 25px;}
+    footer .wrapper{flex-direction: column;}
+    .bx_center_footer .tett_all_ft,.table_footer,.bx_right_footer .tett_all_ft{margin-bottom: 15px;}
+    .all_vongquay{margin-bottom: 100px;}
+}
+@media (max-width:991px){
+    .btn_mboli{display: block;}
+    .box_dangnhapall{margin-right: auto;margin-left: 0;}
+    .bx_tooti_share{right: auto;left: 0;}
+    .bx_tooti_share:after{right: auto;left: 10px;}
+    .box_dangnhapall .btn_chuadnha,.box_dangnhapall .bx_dangnhap_okus{display: none;}
+    .logo_to{left: 50%;transform: translateX(-50%);}
+    .ls_menutop{position: absolute;right: 0;margin: 0;flex-direction: column;top:50%;background: linear-gradient(90deg, rgba(0,0,0,0.8015581232492998) 0%, rgba(16,8,0,0.8015581232492998) 100%);z-index: 6;padding: 5px 15px;visibility: hidden;opacity: 0;pointer-events: none;}
+    .ls_menutop li{margin-right: 0;padding: 5px 0px;border-bottom: solid 1px #4d4d4d;display: block;width: 100%;text-align: center;}
+    .ls_menutop li:first-child,.ls_menutop li:last-child{border-bottom: none;}
+    .ls_menutop li .box_dangnhapall{margin: 0;}
+    .ls_menutop li .box_dangnhapall a.btn_chuadnha{background: linear-gradient(0deg, rgba(149,121,67,1) 0%, rgba(255,239,148,1) 100%);color:#4f2100;-webkit-text-fill-color:#4f2100;margin-right: 0;}
+    .img_vongquay{margin-top:-20px;margin-bottom: -50px;}
+    .bg_alvongquay{transform: scale(0.6);-moz-transform: scale(0.6);-webkit-transform: scale(0.6);margin-top: -90px;margin-bottom: -80px;}
+    .link_dn_mobila{display: block;}
+    .link_dn_mobila .box_dangnhapall .btn_chuadnha,.link_dn_mobila .box_dangnhapall .bx_dangnhap_okus{display: flex;}
+    .bg_khungbxh_top{top:-13px;}
+    .bg_khungbxh_bottom{bottom: -6px;}
+    .line_leftall,.line_rightall{width: 3px;}
+    .ls_menutop.ac_show{top:100%;opacity: 1;visibility: visible;pointer-events: auto;}
+    .ndbang_xhtopall table tr th{font-size: 25px;}
+    .ndbang_xhtopall table tr td{font-size: 20px;}
+    .bx_texchay p{font-size: 16px;}
+    .fix_bt{display: flex;align-items: center;justify-content: center;}
+}
+@media (max-width:600px){
+    .logo_to a img{width: 100px;}
+    .link_alsharee img{width: 65px;}
+    .img_vongquay{margin-bottom: -20px;margin-top: 0px;}
+    .bg_alvongquay{width: 100%;margin:0;left: auto;transform:none;}
+    .ndbang_xhtopall table tr th{font-size: 18px;}
+    .ndbang_xhtopall table tr td{font-size: 16px;}
+    .bg_khungbxh_top{top:-8px;}
+    .bg_khungbxh_bottom{bottom: -3px;}
+    .line_leftall, .line_rightall{width: 2px;}
+    .box_dangnhapall{margin-top: 10px;margin-bottom: 10px;}
+    .btn_mboli{top:12px;}
+    .img_trangtri_left,.img_trangtri_btom{max-width: 100%;}
+    .img_trangtri_left{left: -2px;top:-2px;}
+    .img_trangtri_btom{right: -3px;width: 35px;}
+    .nd_vpvongquay{max-width:100%;border:2px solid transparent;border-image:url(/assets/images/img_borde.png);border-image-repeat:repeat;border-image-slice:3;height: 666px;width: 100%;}
+    .all_bgvatpham, .all_bgvatpham2, .all_bgvatpham3{width: 110px;height: 65px;background-size: contain;font-size: 14px;left: 15px;}
+    .all_bgvatpham.all_vptrung:after{background-size: contain;width:125px;height: 85px;}
+    .all_bgvatpham2{left: 50%;transform: translateX(-50%);}
+    .all_bgvatpham3{left: auto;right:15px;}
+    .all_bgvatpham4{left: auto;right:15px;top:100px;}
+    .all_bgvatpham5{left: auto;right:15px;top:180px;}
+    .all_bgvatpham6{left: auto;right:15px;top:260px;}
+    .all_bgvatpham7{left: auto;right:15px;top:340px;}
+    .all_bgvatpham8{left: auto;right:15px;top:420px;}
+    .all_bgvatpham9{left: auto;right:15px;top:500px;}
+    .all_bgvatpham10{left: auto;right:15px;top:580px;}
+    .all_bgvatpham11{left: 50%;transform: translateX(-50%);top:580px;}
+    .all_bgvatpham12{left: 15px;top:580px;}
+    .all_bgvatpham13{left: 15px;top:500px;}
+    .all_bgvatpham14{left: 15px;top:420px;}
+    .all_bgvatpham15{left: 15px;top:340px;}
+    .all_bgvatpham16{left: 15px;top:260px;}
+    .all_bgvatpham17{left: 15px;top:180px;}
+    .all_bgvatpham18{left: 15px;top:100px;}
+    .btn_quayallvq a{width: 110px;background-size: contain;height: 35px;font-size: 20px;margin: 0 auto;margin-top: 5px;}
+    .btn_quayallvq p{font-size: 12px;}
+    .btn_quayallvq p b{display: block;}
+    .btn_quayallvq a em{font-size: 14px;-webkit-text-fill-color: #fbe06f;}
+    .btn_mboli.ac_show{top:23px;}
+    .bx_tooti_hv{left: 50%;top:100%;width: 100%;transform: translateX(-50%);right: auto;font-size: 14px;}
+    .bx_tooti_hv:after{top:-5px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:5px solid #fff;}
+    .ls_xhtop2345 li{-webkit-box-flex:0;-ms-flex:0 0 calc(100% - 20px);flex:0 0 calc(100% - 20px);width:calc(100% - 20px);}
+    .bgall_khungpop{padding: 25px 20px;}
+    .ls_formal_dktt li{flex-direction: column;align-items: baseline;}
+    .ls_formal_dktt li span{margin-bottom: 10px;}
+    .box_scroll p{font-size: 14px;}
+    .all_ltvp_trungpop li{width:calc(50% - 20px);margin: 0px 10px;margin-bottom: 20px;}
+    .bang_allkhodo_pop tr th, .bang_allkhodo_pop tr td{white-space: nowrap;padding: 5px 10px;}
+    .all_vongquay{margin-bottom:50px;}
+}

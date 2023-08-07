@@ -1,6 +1,9 @@
+import Header from '@/components/header/page'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Footer from '@/components/footer/page'
+import "@/public/css/vq_sro.css";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+      <Header/>
+      {children}
+      <Footer/>
+      </body>
+      <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+      <script type='text/javascript' src="js/app.js"></script>
     </html>
   )
 }
