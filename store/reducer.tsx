@@ -2,10 +2,10 @@ import { ReactNode } from "react";
 
 interface reducerState {
   modal: ReactNode;
-  loading: number;
-  isLogin: boolean;
   refresh: boolean;
+  isLogin: boolean;
   loadingLogin: boolean;
+  loading: number;
 }
 export const initState: reducerState = {
   modal: <></>,
