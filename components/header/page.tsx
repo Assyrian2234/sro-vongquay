@@ -11,7 +11,7 @@ import JSCookie from "js-cookie";
 import { useMyReducer } from "@/store/Provider";
 import { logError, logInfo } from "@/utils/log-helper";
 import moment from "moment";
-import { AccountFullInfoType } from "@/type/componentTypes";
+import { AccountFullInfoType } from "@/types/componentTypes";
 import { StoreContext } from "@/store";
 import SpinLoading from "../common/spin-loading";
 type TokenProps = {

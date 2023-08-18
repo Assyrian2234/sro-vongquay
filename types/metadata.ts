@@ -1,22 +1,16 @@
 export interface MetaData<T> {
-  code: number;
-  mess: string;
-  data: Data<T>;
+  status: number;
+  message: string;
+  data: DataT<T>;
 }
 
-export interface Data<T> {
+export interface DataT<T> {
   total: number;
   list: T[];
-  giftSpin?: string;
-  totalSpin?: number;
-  spinType?: string;
-  personalRank?: T;
-  currReceive?: number;
-  receivedItem?: T;
 }
 
 export interface Data<T> {
-  code: number;
-  mess: string;
+  status: number;
+  message: string;
   data: T;
 }

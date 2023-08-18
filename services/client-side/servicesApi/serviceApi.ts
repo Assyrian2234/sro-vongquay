@@ -15,7 +15,7 @@ import {
   SpinItemInfo,
   TarotInfo,
   VoteTeamGiftRes,
-} from "@/type/apiTypes";
+} from "@/types/apiTypes";
 import {
   BirthdayCardReceiveGiftParam,
   GiftTeamVoteParam,
@@ -25,7 +25,7 @@ import {
   SpinItemParam,
   TarotCardParam,
   TeamVoteParam,
-} from "@/type/paramTypes";
+} from "@/types/paramTypes";
 const api = AxiosConfig();
 
 ////

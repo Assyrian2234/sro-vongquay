@@ -14,16 +14,16 @@ import {
   GiftHistoryListParam,
   PagingParam,
   VoteHistoryParam,
-} from "@/type/paramTypes";
+} from "@/types/paramTypes";
 import {
   AccountInventory,
   AccountVerification,
   AccountVipInfo,
   ReceiveGiftHistory,
   VoteHistory,
-} from "@/type/apiTypes";
-import { AccountInfo } from "@/type/apiTypes";
-import { AccountFullInfoType } from "@/type/componentTypes";
+} from "@/types/apiTypes";
+import { AccountInfo } from "@/types/apiTypes";
+import { AccountFullInfoType } from "@/types/componentTypes";
 const api = AxiosConfig();
 
 export const getAccountInfo = (): Promise<AxiosResponse<any>> => {

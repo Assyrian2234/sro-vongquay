@@ -1,4 +1,4 @@
-import { ListTeamAPLInfo } from "@/type/apiTypes";
+import { ListTeamAPLInfo } from "@/types/apiTypes";
 import { apiHelper } from "./api";
 import { logError } from "@/utils/log-helper";
 interface VoteTeamListDataRespon {

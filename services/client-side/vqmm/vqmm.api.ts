@@ -12,16 +12,16 @@ import {
   GiftHistoryListParam,
   PagingParam,
   VoteHistoryParam,
-} from "@/type/paramTypes";
+} from "@/types/paramTypes";
 import {
   AccountInventory,
   ReceiveGiftHistory,
   SpinItemInfo,
   SpinLogInfo,
   VoteHistory,
-} from "@/type/apiTypes";
-import { AccountInfo } from "@/type/apiTypes";
-import { AccountFullInfoType } from "@/type/componentTypes";
+} from "@/types/apiTypes";
+import { AccountInfo } from "@/types/apiTypes";
+import { AccountFullInfoType } from "@/types/componentTypes";
 const api = AxiosConfig();
 
 //danh sách vật phẩm spin

@@ -6,6 +6,7 @@ import Footer from '@/components/footer/page'
 import "@/public/css/vq_sro.css";
 import { requireAuth } from "@/services/server-side/authen";
 import { StoreProvider } from "@/store";
+import { Provider } from 'react-redux';
 
 const inter = Inter({ subsets: ['latin'] })
 
